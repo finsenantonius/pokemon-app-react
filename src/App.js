@@ -1,8 +1,8 @@
 import { Route } from "react-router-dom";
 
-import PokemonList from "./components/PokemonList";
-import PokemonDetail from "./components/PokemonDetail";
-import MyPokemon from "./components/MyPokemon";
+import PokemonList from "./pages/PokemonList";
+import PokemonDetail from "./pages/PokemonDetail";
+import MyPokemon from "./pages/MyPokemon";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Route exact path="/">
         <PokemonList />
       </Route>
-      <Route path="/detail">
+      <Route path="/detail/:id">
         <PokemonDetail />
       </Route>
       <Route path="/my-pokemon">
